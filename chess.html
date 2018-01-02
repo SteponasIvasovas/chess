@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chess</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- mano stiliai -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="canvas-container" class="col-md-6">
+        <canvas id="my-canvas">
+        </canvas>
+      </div>
+      <div id="move-container" class="col-md-6">
+        <button id="undo-btn" class="btn btn-primary" type="button" name="button">Undo</button>
+        <button id="edit-btn" class="btn btn-primary" type="button" name="button">Edit</button>
+        <button id="reset-btn" class="btn btn-primary" type="button" name="button">Reset</button>
+        <!-- <button id="dialog-btn" class="btn btn-primary" type="button" name="button">Dialog</button> -->
+        <ol>
+        </ol>
+      </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- my script -->
+    <script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/ChessGame.class.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/ChessPiece.class.js"></script>
+    <script type="text/javascript" src="js/Pawn.class.js"></script>
+    <script type="text/javascript" src="js/Rook.class.js"></script>
+    <script type="text/javascript" src="js/Knight.class.js"></script>
+    <script type="text/javascript" src="js/Bishop.class.js"></script>
+    <script type="text/javascript" src="js/Queen.class.js"></script>
+    <script type="text/javascript" src="js/King.class.js"></script>
+  </body>
+</html>
