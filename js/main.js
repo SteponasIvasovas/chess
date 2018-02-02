@@ -176,6 +176,12 @@ $(document).ready(function(){
   $("#dialog-btn").click(function() {
     createDialog(game)
   });
+
+  $("#info-btn").click(function () {
+    alert('Chess for one player (for now, still working on websockets).\nButtons :\n1) Undo - revert last move\n2) Edit - Click once to enter edit mode and move any piece freely across the board, once you are done moving pieces around click edit once again to get back to normal mode\n3) Reset - click reset button to reset game\nKnown problems:\n1) On the first load, image files of chess pieces might not load, refresh page or click reset button to fix this problem');
+  });
+
+
 });
 
 function resizeCanvas() {
@@ -200,14 +206,14 @@ function createDialog(game) {
   if (game.getTurn() == WHITE) {
     color = "w";
   }
-  let imgSrc = "http://www.matn.co.uk/__chess/png/" + color +"queen.png";
+  let imgSrc = "img/" + color +"queen.png";
   let img1 = $("<img src = " + imgSrc + " width='100' height='100'>");
   a.append(img1);
   a.click(function(){
     choosePiece(game, 1, img1[0]);
   });
   div.append(a);
-  imgSrc = "http://www.matn.co.uk/__chess/png/" + color + "rook.png";
+  imgSrc = "img/" + color + "rook.png";
   let img2 = $("<img src = " + imgSrc + " width='100' height='100'>");
   a = $("<a>");
   a.append(img2);
@@ -215,7 +221,7 @@ function createDialog(game) {
     choosePiece(game, 2, img2[0]);
   });
   div.append(a);
-  imgSrc = "http://www.matn.co.uk/__chess/png/" + color + "knight.png";
+  imgSrc = "img/" + color + "knight.png";
   let img3 = $("<img src = " + imgSrc + " width='100' height='100'>");
   a = $("<a>");
   a.append(img3);
@@ -223,7 +229,7 @@ function createDialog(game) {
     choosePiece(game, 3, img3[0]);
   });
   div.append(a);
-  imgSrc = "http://www.matn.co.uk/__chess/png/" + color + "bishop.png";
+  imgSrc = "img/" + color + "bishop.png";
   let img4 = $("<img src = " + imgSrc + " width='100' height='100'>");
   a = $("<a>");
   a.append(img4);
@@ -264,9 +270,9 @@ function choosePiece(game, pieceNr, img) {
     case STATE_GAME:
       break;
     case STATE_BLACK_WIN:
-      console.log("BLACK WINS! CONGRATULATIONS")
+      alert("BLACK WINS! CONGRATULATIONS")
       break;
     case STATE_WHITE_WIN:
-      console.log("WHITE WINS! CONGRATULATIONS")
+      alert("WHITE WINS! CONGRATULATIONS")
   }
 }
