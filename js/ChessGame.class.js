@@ -150,7 +150,7 @@ class ChessGame {
     //pridedam juodus pestininkus
     type = "pawn";
     color = BLACK;
-    imgSrc = "http://www.matn.co.uk/__chess/png/bpawn.png";
+    imgSrc = "img/bpawn.png";
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     for (let i = 0; i < 8; i++) {
       //x = i, y = 1
@@ -160,7 +160,7 @@ class ChessGame {
     //pridedam baltus pestininkus
     type = "pawn";
     color = WHITE;
-    imgSrc = "http://www.matn.co.uk/__chess/png/wpawn.png";
+    imgSrc = "img/wpawn.png";
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     for (let i = 0; i < 8; i++) {
       //x = i, y = 6
@@ -170,7 +170,7 @@ class ChessGame {
     //pridedam juodus bokstus
     type = "rook";
     color = BLACK;
-    imgSrc = "http://www.matn.co.uk/__chess/png/brook.png";
+    imgSrc = "img/brook.png";
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     //x = 0, y = 0
     chessBoard[0][0] = new Rook(0, 0, type, color, img[0]);
@@ -180,7 +180,7 @@ class ChessGame {
     //pridedam baltus bokstus
     type = "rook";
     color = WHITE;
-    imgSrc = "http://www.matn.co.uk/__chess/png/wrook.png";
+    imgSrc = "img/wrook.png";
     img = $("<img class = 'rook' src = " + imgSrc + " width='100' height='100'>");
     //x = 0, y = 7
     chessBoard[0][7] = new Rook(0, 7, type, color, img[0]);
@@ -190,7 +190,7 @@ class ChessGame {
     //pridedam juodus arklius
     type = "knight";
     color = BLACK;
-    imgSrc = "http://www.matn.co.uk/__chess/png/bknight.png"
+    imgSrc = "img/bknight.png"
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     //x = 1, y = 0
     chessBoard[1][0] = new Knight(1, 0, type, color, img[0]);
@@ -200,7 +200,7 @@ class ChessGame {
     //prideddam baltus arklius
     type = "knight";
     color = WHITE;
-    imgSrc = "http://www.matn.co.uk/__chess/png/wknight.png";
+    imgSrc = "img/wknight.png";
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     //x = 1, y = 7
     chessBoard[1][7] = new Knight(1, 7, type, color, img[0]);
@@ -210,7 +210,7 @@ class ChessGame {
     //pridedam juodus dramblius
     type = "bishop";
     color = BLACK;
-    imgSrc = "http://www.matn.co.uk/__chess/png/bbishop.png";
+    imgSrc = "img/bbishop.png";
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     //x = 2, y = 0
     chessBoard[2][0] = new Bishop(2, 0, type, color, img[0]);
@@ -220,7 +220,7 @@ class ChessGame {
     //pridedam baltus dramblius
     type = "bishop";
     color = WHITE;
-    imgSrc = "http://www.matn.co.uk/__chess/png/wbishop.png";
+    imgSrc = "img/wbishop.png";
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     //x = 2, y = 7
     chessBoard[2][7] = new Bishop(2, 7, type, color, img[0]);
@@ -230,7 +230,7 @@ class ChessGame {
     //pridedam juoda karaliene
     type = "queen";
     color = BLACK;
-    imgSrc = "http://www.matn.co.uk/__chess/png/bqueen.png";
+    imgSrc = "img/bqueen.png";
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     //x = 3, y = 0
     chessBoard[3][0] = new Queen(3, 0, type, color, img[0]);
@@ -238,7 +238,7 @@ class ChessGame {
     //pridedam balta karaliene
     type = "queen";
     color = WHITE;
-    imgSrc = "http://www.matn.co.uk/__chess/png/wqueen.png";
+    imgSrc = "img/wqueen.png";
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     //x = 4, y = 7
     chessBoard[4][7] = new Queen(4, 7, type, color, img[0]);
@@ -246,7 +246,7 @@ class ChessGame {
     //pridedam juoda karaliu
     type = "king";
     color = BLACK;
-    imgSrc = "http://www.matn.co.uk/__chess/png/bking.png";
+    imgSrc = "img/bking.png";
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     //x = 4, y = 0
     chessBoard[4][0] = new King(4, 0, type, color, img[0]);
@@ -255,7 +255,7 @@ class ChessGame {
     //pridedam balta karaliu
     type = "king";
     color = WHITE;
-    imgSrc = "http://www.matn.co.uk/__chess/png/wking.png";
+    imgSrc = "img/wking.png";
     img = $("<img src = " + imgSrc + " width='100' height='100'>");
     //x = 3, y = 7
     chessBoard[3][7] = new King(3, 7, type, color, img[0]);

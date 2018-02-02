@@ -1,11 +1,12 @@
-$(function(){
+
+
+$(document).ready(function(){
   //inicializuojam sachmatu lenta
   let game = new ChessGame();
   let canvas = $("#my-canvas");
   let ctx = canvas[0].getContext("2d");
   resizeCanvas();
   drawBoard(game.getBoard());
-
   //undefined reiskia figura nera paspausta
   //jei reiskme reiskia figura yra paspausta ir galima ja judinti
   let selectedPiece = undefined;
@@ -104,10 +105,10 @@ $(function(){
             case STATE_GAME:
               break;
             case STATE_BLACK_WIN:
-              console.log("BLACK WINS! CONGRATULATIONS")
+              alert("BLACK WINS! CONGRATULATIONS");
               break;
             case STATE_WHITE_WIN:
-              console.log("WHITE WINS! CONGRATULATIONS")
+              alert("WHITE WINS! CONGRATULATIONS");
           }
 
           break;
