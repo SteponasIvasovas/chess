@@ -178,7 +178,7 @@ $(document).ready(function(){
   });
 
   $("#info-btn").click(function () {
-    alert('Chess for one player(still working on websockets) written using javascript with jquery library.\nButtons :\n1) Undo - revert last move\n2) Edit - Click once to enter edit mode and move any piece freely across the board, once you are done moving pieces around click edit once again to get back to normal mode\n3) Reset - click reset button to reset game\nKnown problems:\n1) On the first load, image files of chess pieces might not load, refresh page or click reset button to fix this problem');
+    alert('Chess for one or two players on one computer (still working on websockets and ai) written using javascript with jquery library.\nButtons :\n1) Undo - revert last move\n2) Edit - Click once to enter edit mode and move any piece freely across the board, once you are done moving pieces around click edit once again to get back to normal mode\n3) Reset - click reset button to reset game\nKnown problems:\n1) On the first load, image files of chess pieces might not load, refresh page or click reset button to fix this problem');
   });
 
 
